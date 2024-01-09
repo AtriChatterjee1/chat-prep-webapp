@@ -8,10 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        darkslategray: "#333533",
+        goldenrod: "#f5cb5c",
+        black: "#000",
+        white: "#fff",
+        gray: "#242423",
+        fontgray: "#999999",
+        borderGray: "#868686",
+        questionMarkGray: "#464646",
+        correctGreen: "#299641",
+        wrongRed: " #962929;"
+      },
+      spacing: {},
+      fontFamily: {
+        metropolis: "Metropolis",
       },
     },
   },
