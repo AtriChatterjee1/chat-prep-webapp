@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 
 const Quiz: NextPage = () => {
     return (
-        <div className=" flex flex-col items-center px-[10vw] py-[10vh]">
+        <div className=" flex flex-col items-center px-[10vw] pt-[8vh]">
             <QuizProgress/>
             <div className="relative bg-gray w-[55vw] rounded-3xl px-[10%] pt-16 pb-[3%] flex flex-col items-center text-white">
                 <Timer/>
