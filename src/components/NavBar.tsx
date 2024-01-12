@@ -1,10 +1,15 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import settings from '../assets/Settings.svg'
 import leaderboard from '../assets/Leaderboard.svg'
 import myscore from '../assets/MyScore.svg'
 import logout from '../assets/Logout.svg'
+
+// const settings: String = "/Settings.svg"
+// const leaderboard: String = "/Leaderboard.svg"
+// const myscore: String = "/MyScore.svg"
+// const logout: String = "/Logout.svg"
 
 
 const NavBar: NextPage = () => {
@@ -16,7 +21,7 @@ const NavBar: NextPage = () => {
             <div className="flex text-sm">
                 <div className="text-fontgray mr-[1.6vw] flex">
                     <Image 
-                        src={settings}
+                        src = {settings}
                         alt="Settings"
                     />
                     <div className="ml-1">

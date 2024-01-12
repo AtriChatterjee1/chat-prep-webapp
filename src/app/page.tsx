@@ -1,11 +1,8 @@
-import type { NextPage } from "next";
-import PrimaryButton from "../components/PrimaryButton";
-import QuizButton from "../components/QuizButton";  
+import type { NextPage } from "next"; 
 import Button from "../components/Button";
-import Image from 'next/image';
-import quiz from '../assets/Quiz.svg'
+import Image from 'next/legacy/image';
 import DarkBG from '../assets/DarkBG.svg'
-import QuizProgress from "@/components/QuizProgress";
+import QuizProgress from "../components/QuizProgress";
 
 const Home: NextPage = () => {
   return (

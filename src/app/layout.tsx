@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from '../components/NavBar'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import DarkBG from '../assets/DarkBG.svg'
 import Dark_BG from '../assets/Dark_BG.png'
 import { CSSProperties } from 'react'
@@ -20,19 +20,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="relative min-h-screen font-metropolis">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={DarkBG} // Adjust the path to your SVG file
-          layout="fill"
-          objectFit="cover" // or 'contain' based on your preference
-          alt="Background"
-        />
-      </div>
-      <div className="relative z-10">
-        <NavBar/>
-        {children}
-      </div>
-    </div>
+    <html lang="en">
+      <body>
+        <div className="relative min-h-screen font-metropolis">
+          {/* <div className="absolute inset-0 z-0"> */}
+            <Image
+              src={DarkBG} // Adjust the path to your SVG file
+              layout="fill"
+              objectFit="cover" // or 'contain' based on your preference
+              alt="Background"
+              className='z-0'
+            />
+          {/* </div> */}
+          <div className="relative z-10 w-full min-h-screen">
+            <NavBar/>
+            {children}
+          </div>
+        </div>
+      </body>
+    </html>
+    
   )
 }

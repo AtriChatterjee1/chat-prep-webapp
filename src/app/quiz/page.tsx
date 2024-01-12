@@ -1,7 +1,7 @@
-import QuizProgress from "@/components/QuizProgress";
-import Timer from "@/components/Timer";
+import QuizProgress from "../../components/QuizProgress";
+import Timer from "../../components/Timer";
 import type { NextPage } from "next";
-import Button from "@/components/Button";
+import Button from "../../components/Button";
 
 const Quiz: NextPage = () => {
     return (

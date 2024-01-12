@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Image from "next/image";
-import QuestionMarkIcon from "../assets/QuestionMarkIcon.svg"
+import Image from "next/legacy/image";
+import QuestionMarkIcon from "./QuestionMarkIcon.svg"
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 

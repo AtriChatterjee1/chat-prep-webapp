@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import QuestionMark from "../components/QuestionMark";
 import QuestionMarkIcon from "../assets/QuestionMarkIcon.svg"
 import Correct from "../assets/Correct.svg"
