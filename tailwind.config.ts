@@ -19,7 +19,7 @@ const config: Config = {
         borderGray: "#868686",
         questionMarkGray: "#464646",
         correctGreen: "#299641",
-        wrongRed: " #962929;"
+        wrongRed: " #962929"
       },
       spacing: {},
       fontFamily: {
