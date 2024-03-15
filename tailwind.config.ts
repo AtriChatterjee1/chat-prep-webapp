@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,11 +19,12 @@ const config: Config = {
         borderGray: "#868686",
         questionMarkGray: "#464646",
         correctGreen: "#299641",
-        wrongRed: " #962929;"
+        wrongRed: " #962929;",
+        
       },
       spacing: {},
       fontFamily: {
-        metropolis: "Metropolis",
+        metropolis: "Metropolis, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans','Liberation Sans', sans-serif"
       },
     },
   },
