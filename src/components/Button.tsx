@@ -10,6 +10,8 @@ type OptionButton = {
   optionHeight?: CSSProperties["height"];
   optionCursor?: CSSProperties["cursor"];
   optionFontWeight?: CSSProperties["fontWeight"];
+  optionBG?:CSSProperties["backgroundColor"];
+  optionfontColor?:CSSProperties["color"];
 
   /** Action props */
   onOptionsContainerClick?: () => void;
@@ -22,22 +24,26 @@ const Property1ShortOption: NextPage<OptionButton> = ({
   optionHeight,
   optionCursor,
   optionFontWeight,
+  optionBG,
+  optionfontColor,
   onOptionsContainerClick,
 }) => {
   const outerStyle: CSSProperties = {
       border: optionBorder,
       cursor: optionCursor,
       width: optionWidth,
-      height: optionHeight
+      height: optionHeight,
+      backgroundColor: optionBG
     };
 
   const optionStyle: CSSProperties = {
       fontWeight: optionFontWeight,
+      color: optionfontColor
     };
 
   return (
     <div
-      className="bg-darkslategray box-border flex items-center justify-center text-center border-[1px] border-solid border-borderGray rounded-full"
+      className=" box-border flex items-center justify-center text-center border-[1px] border-solid rounded-full"
       style={outerStyle}
       onClick={onOptionsContainerClick}
     >

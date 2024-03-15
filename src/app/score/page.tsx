@@ -3,6 +3,8 @@ import type { NextPage } from "next";
 import Button from "../../components/Button";
 import Trophy from "../../assets/Frame.png";
 import Image from 'next/legacy/image';
+import PlayButton from "@/components/PlayButton";
+import LoginButton from "@/components/LoginButton";
 
 const Score: NextPage = () => {
 
@@ -39,29 +41,18 @@ const Score: NextPage = () => {
                                 <div className="w-min h-min flex-col whitespace-nowrap font-metropolis text-base text-white leading-[1.6rem] pt-[10%] font-light px-4">Leaderboard</div>
                             </div>
                         </div>
-                        <div className="w-min h-min flex-col whitespace-nowrap font-metropolis text-goldenrod pt-[10%] ps-6 text-base">View Today’s Leaderboard</div>
+                        <div className="w-min h-min flex-col whitespace-nowrap font-metropolis text-goldenrod pt-[10%] ps-6 text-base underline underline-offset-2 cursor-pointer">View Today’s Leaderboard</div>
                         <div className="h-min w-96 flex-col font-left font-metropolis text-base text-white leading-[1.6rem] text-wrap pt-[15%] font-light ps-6">
                             Congratulations! You have successfully completed today’s quiz. Come back to this space tomorrow for next questions.
                         </div>
                         <div className="w-min h-min items-start gap-7"></div>
                     </div>
-                    <div className="mt-[6%] flex flex-row">
-                        <Button
-                            option="Share" 
-                            optionWidth={250}
-                            optionHeight={50}
-                            // optionbg="#F5CB5C"
-                            optionFontWeight={1000}
-                            // optionFontfamily="Metropolis"
-                    
+                    <div className="mt-[6%] flex flex-row gap-[4%]">
+                        <PlayButton 
+                            option ="Share" 
+                            optionBG="goldenrod"
                         />
-                        <Button 
-                            option="Answers"
-                            optionWidth={250}
-                            optionHeight={50}
-                            
-                            
-                        />
+                        <LoginButton text ="Answers" />
                     </div>
                 </div>
 

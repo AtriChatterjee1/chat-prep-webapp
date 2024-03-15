@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <div className="mb-2 font-bold text-3xl">ChatPrep</div>
         <div className="font-light text-xl">Ace the Current Affairs: Daily Curated Quizzes</div>
       </div>
-      <PlayButton/>
+      <PlayButton option="Play Now" optionBG="goldenrod"/>
       <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh]">
         Save your progress with a free account
       </div>
