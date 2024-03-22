@@ -4,7 +4,9 @@ import { useMemo, type CSSProperties } from "react";
 type OptionButton = {
   option: string;
 
+
   /** Style props */
+  optionMinWidth?:CSSProperties["minWidth"]
   optionBorder?: CSSProperties["border"];
   optionWidth?: CSSProperties["width"];
   optionHeight?: CSSProperties["height"];
@@ -21,7 +23,7 @@ type OptionButton = {
 const Property1ShortOption: NextPage<OptionButton> = ({
   option,
   optionBorder,
- 
+  optionMinWidth,
   optionHeight,
   optionCursor,
   optionFontWeight,
@@ -33,7 +35,7 @@ const Property1ShortOption: NextPage<OptionButton> = ({
   const outerStyle: CSSProperties = {
       border: optionBorder,
       cursor: optionCursor,
-     
+     minWidth:optionMinWidth,
       height: optionHeight,
       backgroundColor: optionBG,
       borderColor : optionBorderColor
