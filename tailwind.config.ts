@@ -27,6 +27,10 @@ const config: Config = {
         metropolis: "Metropolis",
       },
     },
+    screens:{
+      '2xl':{'max': '1535px'},
+      'xl':'1000px'
+    }
   },
   plugins: [],
 }

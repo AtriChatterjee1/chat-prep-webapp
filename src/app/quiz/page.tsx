@@ -1,10 +1,23 @@
+"use client"
+
 import QuizProgress from "../../components/QuizProgress";
+
+
 import Timer from "../../components/Timer";
 import type { NextPage } from "next";
 import Button from "../../components/Button";
 import CorrectWrong from "@/components/CorrectWrong";
+import React, { useEffect, useState } from 'react';
+
 
 const Quiz: NextPage = () => {
+    const [text1, settext1] = useState("optionA")
+    const [text2, settext2] = useState("optionB")
+    const [text3, settext3] = useState("optionC")
+    const [text4, settext4] = useState("optionD")
+    const [size,useSize] = useState("200px")
+
+   
     return (
         <div className=" flex flex-col items-center px-[10vw] pt-[8vh]">
             <CorrectWrong/>
@@ -17,61 +30,40 @@ const Quiz: NextPage = () => {
                 <div className="text-center font-normal my-[6%] text-lg">
                     Which of the following Indian States / Union Territories does not have a land boundary with any foreign countries?
                 </div>
-                <div className="flex-wrap flex-row flex font-extralight align-center justify-center gap-[2vw] border-red-400 border-[20px]">
+                <div className="flex-wrap flex-row flex font-extralight align-center justify-center gap-[2vw] ">
                     
                     
                     <Button
-                        option="A. "
-                        
+                        option={text1}
+                        optionMinWidth="200px"
+                        optionHeight="8vh"
+                        optionFontWeight="400"
+                        optionBG="darkslategray"
+                    />
+                     <Button
+                        option={text2}
+                        optionMinWidth="200px"
+                        optionBG="darkslategray"
                         optionHeight="8vh"
                         optionFontWeight="400"
                     />
                      <Button
-                        option="A. Cokj"
-                        
-                        optionHeight="8vh"
+                        option={text3}
+                        optionMinWidth="200px"
+                        optionBG="darkslategray"
+                          optionHeight="8vh"
                         optionFontWeight="400"
                     />
                      <Button
-                        option="A. Caj"
-                        
-                        optionHeight="8vh"
-                        optionFontWeight="400"
-                    />
-                     <Button
-                        option="A. ;jkll"
-                        
+                        option={text4}
+                        optionMinWidth="200px"
+                        optionBG="darkslategray"
                         optionHeight="8vh"
                         optionFontWeight="400"
                     />
                 </div>
 
-                <div className="flex-wrap flex-row font-extralight border-red-400 border-[20px] w-[40vw]">
-                    <Button
-                        option="A. Coal"
-                        
-                        optionHeight="8vh"
-                        optionFontWeight="400"
-                    />
-                    <Button
-                        option="B. Natural Gas"
-                        
-                        optionHeight="8vh"
-                        optionFontWeight="400"
-                    />
-                    <Button
-                        option="C."
-                       
-                        optionHeight="8vh"
-                        optionFontWeight="400"
-                    />
-                    <Button
-                        option="D.m"
-                      
-                        optionHeight="8vh"
-                        optionFontWeight="400"
-                    />
-                </div>
+                
             </div>
             
         </div>
@@ -79,3 +71,31 @@ const Quiz: NextPage = () => {
 }
 
 export default Quiz;
+
+
+{/* <div className=" xl:grid xl:grid-cols-2  font-extralight border-red-400 border-[20px] w-[40vw]">
+                    <Button
+                         option={text1}
+                        
+                        optionHeight="8vh"
+                        optionFontWeight="400"
+                    />
+                    <Button
+                        option={text2}
+                        
+                        optionHeight="8vh"
+                        optionFontWeight="400"
+                    />
+                    <Button
+                        option={text3}
+                       
+                        optionHeight="8vh"
+                        optionFontWeight="400"
+                    />
+                    <Button
+                        option={text4}
+                      
+                        optionHeight="8vh"
+                        optionFontWeight="400"
+                    />
+                </div> */}
