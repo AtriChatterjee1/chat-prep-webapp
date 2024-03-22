@@ -1,44 +1,61 @@
+"use client"
 import { NextPage } from "next";
 import Image from 'next/legacy/image';  
 import Quiz from "../../assets/Quiz.svg";
 import Button from "@/components/Button";
 import LoginButton from "@/components/LoginButton";
+import {app} from "@/utils/firebase";
+import { Signin } from '@/components/signin';
+import { getAuth , onAuthStateChanged} from 'firebase/auth';
+import { useEffect } from 'react';
+import { useSetRecoilState , useRecoilState, RecoilRoot} from 'recoil';
+import { userAtom } from '@/store/atoms/user';
+import { useState } from "react";
+// import { Auth } from "firebase/auth";
+// import {app} from "src/utils/firebase.ts";
+import React from "react";
+
+
+function App() {
+    return <RecoilRoot>
+      <Login />
+    </RecoilRoot>
+    
+  }
+
 
 const Login : NextPage = () => {
-    return (
-        <div className="w-full h-[81vh] flex flex-col items-center my-[4vh]">
-            <Image 
-                src={Quiz}
-                alt = "Quiz"
-                width={200}
-                height={200}
-            />
-            <div className="flex flex-col justify-center items-center text-white my-[4vh]">
-                <div className="mb-2 font-bold text-3xl">Login</div>            
-            </div>
+    const auth = getAuth(app);
+    const [user, setUser] = useRecoilState(userAtom);
+    useEffect(() => {
+      onAuthStateChanged(auth, function(user) {
+        if (user && user.email) {
+          setUser({
+            loading: false,
+            user : {
+              email :user.email
+            }
+  
+          })
+        } else {
+          setUser({loading:false});
+          // No user is signed in.
+          console.log('There is no logged in user');
+        }
+      });
+  
+    },[]);
+    //Sign IN using email link
+    if (user.loading){
+        return <div>loading...</div>
+      }
+      if(!user.user){
+        return (
+           <Signin/>
+        );
+        
+    
+      }
+   }
 
-            <Button 
-                option="Sign in with Google"
-                optionBorderColor="goldenrod"
-                optionWidth={350}
-                optionHeight={50}
-            
-            />
-            <div className="my-[2vh]"/>
-            <Button 
-                option="Sign in with Facebook"
-                optionBorderColor="goldenrod"
-                optionWidth={350}
-                optionHeight={50}
-            />
-            <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh]">
-                Play without an account ?
-            </div>
-            <LoginButton text="Play as Guest" />
-        </div>
-    );
-}
-
-
-
-export default Login;
+export default App;

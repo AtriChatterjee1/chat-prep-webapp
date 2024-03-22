@@ -30,11 +30,7 @@ const Quiz: NextPage = () => {
                 <div className="text-center font-normal my-[6%] text-lg">
                     Which of the following Indian States / Union Territories does not have a land boundary with any foreign countries?
                 </div>
-<<<<<<< HEAD
                 {/* <div className="flex-wrap flex-row flex font-extralight align-center justify-center gap-[2vw]">
-=======
-                <div className="flex-wrap flex-row flex font-extralight align-center justify-center gap-[2vw] ">
->>>>>>> 673f9b8b64cd022cf9b025f80a56b7023f3c9182
                     
                     
                     <Button
@@ -67,7 +63,6 @@ const Quiz: NextPage = () => {
                     />
                 </div> */}
 
-<<<<<<< HEAD
                 <div className="flex-wrap flex-row font-extralight-[20px] w-[40vw]">
                     <Button
                         option="A. Coal"
@@ -94,9 +89,6 @@ const Quiz: NextPage = () => {
                         optionFontWeight="400"
                     />
                 </div>
-=======
-                
->>>>>>> 673f9b8b64cd022cf9b025f80a56b7023f3c9182
             </div>
             
         </div>
