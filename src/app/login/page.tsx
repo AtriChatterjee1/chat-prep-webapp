@@ -3,6 +3,10 @@ import Image from 'next/legacy/image';
 import Quiz from "../../assets/Quiz.svg";
 import Button from "@/components/Button";
 import LoginButton from "@/components/LoginButton";
+import { getAuth } from "firebase/auth";
+import { app } from "@/utils/firebase";
+
+export const auth = getAuth(app);
 
 const Login : NextPage = () => {
     return (
