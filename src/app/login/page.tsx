@@ -15,7 +15,7 @@ import { useState } from "react";
 // import {app} from "src/utils/firebase.ts";
 import React from "react";
 
-
+export const auth = getAuth(app);
 function App() {
     return <RecoilRoot>
       <Login />
@@ -24,8 +24,8 @@ function App() {
   }
 
 
-const Login : NextPage = () => {
-    const auth = getAuth(app);
+const Login: NextPage = () => {
+    // const auth = getAuth(app);
     const [user, setUser] = useRecoilState(userAtom);
     useEffect(() => {
       onAuthStateChanged(auth, function(user) {
@@ -51,7 +51,7 @@ const Login : NextPage = () => {
       }
       if(!user.user){
         return (
-           <Signin/>
+           <div><Signin/></div>
         );
         
     
