@@ -93,5 +93,10 @@ export const Signin =() => {
                 </div>
                 <LoginButton text="Play as Guest" />
             </div>
+        {/* <button onClick={()=>{
+            onSignin();
+        }}>
+            Login With Google
+        </button> */}
     </div>
 }
