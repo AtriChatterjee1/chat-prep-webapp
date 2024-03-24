@@ -67,7 +67,7 @@ const Quiz: NextPage = () => {
                 <div className="flex-wrap flex-row font-extralight-[20px] w-[40vw] "  >
                     <Button
                         option="A. Coal"
-                        onOptionsContainerClick={handleOptionsContainerClick}
+                       
                         
                         optionHeight="8vh"
                         optionFontWeight="400"
