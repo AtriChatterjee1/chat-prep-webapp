@@ -16,6 +16,7 @@ const Quiz: NextPage = () => {
     const [text3, settext3] = useState("optionC")
     const [text4, settext4] = useState("optionD")
     const [size,useSize] = useState("200px")
+    
 
    
     return (
@@ -63,9 +64,10 @@ const Quiz: NextPage = () => {
                     />
                 </div> */}
 
-                <div className="flex-wrap flex-row font-extralight-[20px] w-[40vw]">
+                <div className="flex-wrap flex-row font-extralight-[20px] w-[40vw] "  >
                     <Button
                         option="A. Coal"
+                        onOptionsContainerClick={handleOptionsContainerClick}
                         
                         optionHeight="8vh"
                         optionFontWeight="400"

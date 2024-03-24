@@ -11,6 +11,7 @@ import Image from 'next/legacy/image';
 import Quiz from "@/assets/Quiz.svg";
 import Button from "@/components/Button";
 import LoginButton from "@/components/LoginButton";
+import google from "../assets/google.png"
 
 const provider = new GoogleAuthProvider();
 
@@ -72,22 +73,29 @@ export const Signin =() => {
                     <div className="mb-2 font-bold text-3xl">Login</div>            
                 </div>
     
-                <Button
-                    onOptionsContainerClick={onSignin}
-                     
-                    option="Sign in with Google"
-                    optionBorderColor="goldenrod"
-                    optionWidth={350}
-                    optionHeight={50}
-                
-                />
+                <div className="text-white">
+                    <Button
+                        onOptionsContainerClick={onSignin}
+                        
+                        option="Sign in with Google"
+                        optionBorderColor="goldenrod"
+                        optionWidth={350}
+                        optionHeight={50}
+                        optionfontColor="white"
+                    
+                    />
+                </div>
                 <div className="my-[2vh]"/>
-                <Button 
-                    option="Sign in with Facebook"
-                    optionBorderColor="goldenrod"
-                    optionWidth={350}
-                    optionHeight={50}
-                />
+                <div className="text-white">
+                    <Button 
+                        option="Sign in with Facebook"
+                        optionBorderColor="goldenrod"
+                        optionWidth={350}
+                        optionHeight={50}
+                        optionfontColor="white"
+                    />
+                </div>
+                
                 <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh]">
                     Play without an ac ?
                 </div>
