@@ -15,15 +15,68 @@ const Quiz: NextPage = () => {
     const [text2, settext2] = useState("optionB")
     const [text3, settext3] = useState("optionC")
     const [text4, settext4] = useState("optionD")
-    const [size,useSize] = useState("200px")
+    const [size, useSize] = useState("200px")
+    const [colour, setColour] = useState(false);
+    const [colour4, setColour4] = useState(false);
+    const [colour2, setColour2] = useState(false);
+    const [colour3, setColour3] = useState(false);
+    const [correct, setcorrect] = useState("a");
+
+    const handleClick = () => {
+        setColour(true)
+        if (colour2) {
+            setColour2(false)
+        } if (colour3) {
+            setColour3(false)
+        } if (colour4) {
+            setColour4(false)
+        }
+     
+    }
+    const handleClick2 = () => {
+        setColour2(true)
+        if (colour) {
+            setColour(false)
+        }else if (colour3) {
+            setColour3(false)
+        }else if (colour4) {
+            setColour4(false)
+        }
+    
+    }
+    const handleClick3 = () => {
+        setColour3(true)
+        if (colour2) {
+            setColour2(false)
+        }else if (colour) {
+            setColour(false)
+        }else if (colour4) {
+            setColour4(false)
+        }
+      
+    }
+    const handleClick4 = () => {
+        setColour4(true)
+        if (colour2) {
+            setColour2(false)
+        }else if (colour3) {
+            setColour3(false)
+        }else if (colour) {
+            setColour(false)
+        }
+       
+    }
+
+
+
     
 
-   
+
     return (
         <div className=" flex flex-col items-center px-[10vw] pt-[8vh]">
-            <CorrectWrong/>
+            <CorrectWrong />
             <div className="relative bg-gray w-[55vw] rounded-3xl px-[10%] pt-16 pb-[3%] flex flex-col items-center text-white">
-                <Timer/>
+                <Timer />
                 <div className="font-bold text-2xl">
                     Question #1
                 </div>
@@ -66,33 +119,37 @@ const Quiz: NextPage = () => {
 
                 <div className="flex-wrap flex-row font-extralight-[20px] w-[40vw] "  >
                     <Button
+                        onOptionsContainerClick={handleClick}
                         option="A. Coal"
-                       
-                        
+
+                        optionBG={colour ? "green" : "gray"}
                         optionHeight="8vh"
                         optionFontWeight="400"
                     />
                     <Button
                         option="B. Natural Gas"
-                        
+                        onOptionsContainerClick={handleClick2}
                         optionHeight="8vh"
                         optionFontWeight="400"
+                        optionBG={colour2 ? "green" : "gray"}
                     />
                     <Button
                         option="C."
-                       
+                        onOptionsContainerClick={handleClick3}
                         optionHeight="8vh"
                         optionFontWeight="400"
+                        optionBG={colour3 ? "green" : "gray"}
                     />
                     <Button
                         option="D.m"
-                      
+                        onOptionsContainerClick={handleClick4}
                         optionHeight="8vh"
                         optionFontWeight="400"
+                        optionBG={colour4 ? "green" : "gray"}
                     />
                 </div>
             </div>
-            
+
         </div>
     );
 }
