@@ -22,7 +22,7 @@ model Question {
   updatedAt     DateTime @updatedAt
   time          Int      // Assuming time is stored in seconds or minutes as an integer
   category      String   // Category of the question
-
+  
   @@map("questions")
 }
 

@@ -1,103 +1,103 @@
 const data = [
     {
       "question": "Who is known as the father of the Indian Constitution?",
-      "options": {
-        "a": "Mahatma Gandhi",
-        "b": "B.R. Ambedkar",
-        "c": "Jawaharlal Nehru",
-        "d": "Sardar Vallabhbhai Patel"
-      },
-      "correct_answer": "b"
+      
+        "optionA": "Mahatma Gandhi",
+        "optionB": "B.R. Ambedkar",
+        "optionC": "Jawaharlal Nehru",
+        "optionD": "Sardar Vallabhbhai Patel",
+      
+      "correctAnswer": "optionB"
     },
     {
       "question": "Which planet is known as the Red Planet?",
-      "options": {
-        "a": "Jupiter",
-        "b": "Mars",
-        "c": "Venus",
-        "d": "Saturn"
-      },
-      "correct_answer": "b"
+      
+        "optionA": "Jupiter",
+        "optionB": "Mars",
+        "optionC": "Venus",
+        "optionD": "Saturn"
+      ,
+      "correct_answer": "optionB"
     },
     {
       "question": "Who is the author of the book 'The God of Small Things'?",
-      "options": {
-        "a": "Arundhati Roy",
-        "b": "Jhumpa Lahiri",
-        "c": "Salman Rushdie",
-        "d": "R.K. Narayan"
-      },
-      "correct_answer": "a"
+      
+        "optionA": "Arundhati Roy",
+        "optionB": "Jhumpa Lahiri",
+        "optionC": "Salman Rushdie",
+        "optionD": "R.K. Narayan"
+      ,
+      "correct_answer": "optionA"
     },
     {
       "question": "What is the chemical symbol for water?",
-      "options": {
-        "a": "H2O",
-        "b": "CO2",
-        "c": "NaCl",
-        "d": "CH4"
-      },
-      "correct_answer": "a"
+      
+        "optionA": "H2O",
+        "optionB": "CO2",
+        "optionC": "NaCl",
+        "optionD": "CH4"
+      ,
+      "correct_answer": "optionA"
     },
     {
       "question": "Who discovered the theory of relativity?",
-      "options": {
-        "a": "Isaac Newton",
-        "b": "Albert Einstein",
-        "c": "Galileo Galilei",
-        "d": "Stephen Hawking"
-      },
-      "correct_answer": "b"
+      
+        "optionA": "Isaac Newton",
+        "optionB": "Albert Einstein",
+        "optionC": "Galileo Galilei",
+        "optionD": "Stephen Hawking"
+      ,
+      "correct_answer": "optionB"
     },
     {
       "question": "Which country is known as the Land of the Rising Sun?",
-      "options": {
-        "a": "China",
-        "b": "Japan",
-        "c": "South Korea",
-        "d": "Thailand"
-      },
-      "correct_answer": "b"
+      
+        "optionA": "China",
+        "optionB": "Japan",
+        "optionC": "South Korea",
+        "optionD": "Thailand"
+      ,
+      "correct_answer": "optionB"
     },
     {
       "question": "Who painted the famous 'Mona Lisa'?",
-      "options": {
-        "a": "Vincent van Gogh",
-        "b": "Pablo Picasso",
-        "c": "Leonardo da Vinci",
-        "d": "Michelangelo"
-      },
-      "correct_answer": "c"
+      
+        "optionA": "Vincent van Gogh",
+        "optionB": "Pablo Picasso",
+        "optionC": "Leonardo da Vinci",
+        "optionD": "Michelangelo"
+      ,
+      "correct_answer": "optionC"
     },
     {
       "question": "Which gas is most abundant in the Earth's atmosphere?",
-      "options": {
-        "a": "Nitrogen",
-        "b": "Oxygen",
-        "c": "Carbon Dioxide",
-        "d": "Helium"
-      },
-      "correct_answer": "a"
+      
+        "optionA": "Nitrogen",
+        "optionB": "Oxygen",
+        "optionC": "Carbon Dioxide",
+        "optionD": "Helium"
+      ,
+      "correct_answer": "optionA"
     },
     {
       "question": "Who was the first woman Prime Minister of India?",
-      "options": {
-        "a": "Indira Gandhi",
-        "b": "Sonia Gandhi",
-        "c": "Margaret Thatcher",
-        "d": "Golda Meir"
-      },
-      "correct_answer": "a"
+      
+        "optionA": "Indira Gandhi",
+        "optionB": "Sonia Gandhi",
+        "optionC": "Margaret Thatcher",
+        "optionD": "Golda Meir"
+      ,
+      "correct_answer": "optionA"
     },
     {
       "question": "Which of the following is not a primary color?",
-      "options": {
-        "a": "Red",
-        "b": "Blue",
-        "c": "Yellow",
-        "d": "Green"
-      },
-      "correct_answer": "d"
+      
+        "optionA": "Red",
+        "optionB": "Blue",
+        "optionC": "Yellow",
+        "optionD": "Green"
+      ,
+      "correct_answer": "optionD"
     }
   ]
   
