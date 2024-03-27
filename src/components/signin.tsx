@@ -1,3 +1,4 @@
+"use client"
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 import { useState } from "react";
@@ -12,6 +13,8 @@ import Quiz from "@/assets/Quiz.svg";
 import Button from "@/components/Button";
 import LoginButton from "@/components/LoginButton";
 import google from "../assets/google.png"
+import router from "next/router";
+import { useRouter } from "next/navigation";
 
 const provider = new GoogleAuthProvider();
 
@@ -24,7 +27,9 @@ const actionCodeSettings = {
     handleCodeInApp: true,
   };
 
-export const Signin =() => {
+export default function Signin(){
+
+    const router = useRouter();
     
     const [email, setEmail] = useState("");
     const auth = getAuth(app);
@@ -101,7 +106,7 @@ export const Signin =() => {
                 <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh]">
                     Play without an ac ?
                 </div>
-                <LoginButton text="Play as Guest" />
+                <LoginButton onClick={() => router.push('./quiz')} text="Play as Guest" />
             </div>
         {/* <button onClick={()=>{
             onSignin();

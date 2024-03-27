@@ -5,7 +5,7 @@ import Quiz from "../../assets/Quiz.svg";
 import Button from "@/components/Button";
 import LoginButton from "@/components/LoginButton";
 import {app} from "@/utils/firebase";
-import { Signin } from '@/components/signin';
+import  Signin from '@/components/signin';
 import { getAuth , onAuthStateChanged} from 'firebase/auth';
 import { useEffect } from 'react';
 import { useSetRecoilState , useRecoilState, RecoilRoot} from 'recoil';
