@@ -21,7 +21,7 @@ const Score: NextPage = () => {
 
                 </div>
                 
-                <div className="  w-[60vw] text-white border-[5px] border-yellow-300 ">
+                <div className="  w-[30vw] sm:w-[70vw] text-white border-[5px] border-yellow-300 ">
                     <div className= "flex-col items-start gap-14">
                         <div className=" items-center justify-center gap-6 sm:gap-[5vw] flex flex-row">
                             <div className="flex-col items-center ps-5 text-center">
@@ -42,7 +42,7 @@ const Score: NextPage = () => {
                             </div>
                         </div>
                         <div className=" flex-col text-center font-metropolis text-goldenrod pt-[10%] ps-6 text-base sm:text-sm underline underline-offset-2 cursor-pointer">View Today’s Leaderboard</div>
-                        <div className="w-[55vw] flex-col font-left font-metropolis text-base sm:text-sm text-white leading-[1.6rem] text-wrap pt-[15%] font-light ps-6">
+                        <div className="w-[25vw] sm:w-[65vw] flex-col font-left font-metropolis text-base sm:text-sm text-white leading-[1.6rem] text-wrap pt-[15%] font-light ps-6">
                             Congratulations! You have successfully completed today’s quiz. Come back to this space tomorrow for next questions.
                         </div>
                         <div className=" items-start gap-7"></div>
