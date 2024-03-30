@@ -43,12 +43,12 @@ const PlayButton: NextPage<ButtonOnClick> = ({
       color: optionfontColor
     }; 
     return (
-      <div className="h-[7vh] w-[13vw] flex justify-center items-center rounded-xl "
+      <div className="h-[7vh] xl:w-[13vw] flex justify-center items-center rounded-xl md:w-[30vw] sm:w-[35vw] "
         style= {outerStyle}
         onClick={onClick}
       >
         <div
-        className="text-black font-bold text-xl"
+        className="text-black font-bold text-xl text-center"
         style={optionStyle}
         >
           {option}

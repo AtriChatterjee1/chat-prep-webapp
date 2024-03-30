@@ -33,10 +33,10 @@ export default function Page() {
           <div className="mb-2 font-bold text-3xl text-goldenrod">Prep</div>
         </div>
         
-        <div className="font-light text-xl text-white my-[1vh]">Ace the Current Affairs: Daily Curated Quizzes</div>
+        <div className="font-light text-xl text-white my-[1vh] text-center">Ace the Current Affairs: Daily Curated Quizzes</div>
       </div>
       <PlayButton onClick={() => router.push('./quiz')} option="Play Now" optionBG="goldenrod"/>
-      <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh]">
+      <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh] text-center">
         Save your progress with a free account
       </div>
       <LoginButton onClick={() => router.push('./login')} text="Login / Register" />
