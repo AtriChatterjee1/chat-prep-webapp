@@ -31,7 +31,7 @@ const config: Config = {
       '2xl':{'max': '1535px'},
       'xl':'1000px',
       'sm' : {'max' : '639px'},
-      'md' : {'min' : '640px' , 'max' : '999px'}
+      'md' : {'min' : '640px' , 'max' : '999px'}  
     }
   },
   plugins: [],

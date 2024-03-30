@@ -5,12 +5,13 @@ import Trophy from "../../assets/Frame.png";
 import Image from 'next/legacy/image';
 import PlayButton from "@/components/PlayButton";
 import LoginButton from "@/components/LoginButton";
+import CorrectWrong from "@/components/CorrectWrong";
 
 const Score: NextPage = () => {
 
     return(
         <div className=" flex flex-col items-center px-[10vw] pt-[8vh]">
-            <QuizProgress/>
+            <CorrectWrong/>
 
             <div className="relative bg-gray w-[55vw] sm:w-[75vw] rounded-3xl px-[2%] pt-[8%] pb-[8%] flex flex-row justify-between items-center  text-white ">
                 <div className=" float-left w-[21vw] h-[20vw] mb =[3%] ">
