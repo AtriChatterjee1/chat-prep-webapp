@@ -19,7 +19,7 @@ const NavBar: NextPage = () => {
                 ChatPrep
             </div>
             <div className="flex">
-                <div className="xl:text-fontgray  flex border-rose-800 border-[5px]mx-2 ">
+                <div className="xl:text-fontgray  flex mx-2 ">
                     <Image 
                         src = {settings}
                         alt="Settings"
@@ -28,7 +28,7 @@ const NavBar: NextPage = () => {
                         Settings
                     </div> */}
                 </div>
-                <div className="xl:text-fontgray  border-rose-800 border-[5px] mx-2  flex">
+                <div className="xl:text-fontgray mx-2  flex">
                     <Image 
                         src={leaderboard}
                         alt="Leaderboard"
@@ -37,7 +37,7 @@ const NavBar: NextPage = () => {
                         Leaderboard
                     </div> */}
                 </div>
-                <div className="xl:text-fontgray  border-rose-800 border-[5px] mx-2  flex">
+                <div className="xl:text-fontgray mx-2 flex">
                     <Image 
                         src={myscore}
                         alt="My score"
