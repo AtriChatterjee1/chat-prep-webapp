@@ -18,43 +18,44 @@ const NavBar: NextPage = () => {
             <div className="text-white font-bold text-lg ">
                 ChatPrep
             </div>
-            <div className="flex text-sm">
-                <div className="text-fontgray mr-[1.6vw] flex">
+            <div className="flex xl:text-sm">
+                <div className="xl:text-fontgray mr-[1.6vw] flex">
                     <Image 
                         src = {settings}
                         alt="Settings"
                     />
-                    <div className="ml-1">
+                    <div className="xl:ml-1 sm-ml-0">
                         Settings
                     </div>
                 </div>
-                <div className="text-fontgray mr-[1.6vw] flex">
+                <div className="xl:text-fontgray mr-[1.6vw] flex">
                     <Image 
                         src={leaderboard}
-                        alt="Settings"
+                        alt="Leaderboard"
                     />
-                    <div className="ml-1">
+                    <div className="xl:ml-1 sm-ml-0 ">
                         Leaderboard
                     </div>
                 </div>
-                <div className="text-fontgray mr-[1.6vw] flex">
+                <div className="xl:text-fontgray mr-[1.6vw] flex">
                     <Image 
                         src={myscore}
-                        alt="Settings"
+                        alt="My score"
                     />
-                    <div className="ml-1">
+                    <div className="xl:ml-1">
                         My Scores
                     </div>
                 </div>
-                <div className="text-fontgray mr-[1.6vw] flex">
+                <div className="xl:text-fontgray xl:mr-[1.6vw] md:mr-0 sm:mr-0  flex">
                     <Image 
                         src={logout}
-                        alt="Settings"
+                        alt="Logout"
                     />
-                    <div className="ml-1">
+                    <div className="xl:ml-1">
                         Logout
                     </div>
                 </div>
+                
             </div>
             
         </div>

@@ -104,7 +104,7 @@ export default function Signin(){
                 </div>
                 
                 <div className="text-goldenrod font-light text-xl mt-[10vh] mb-[2vh]">
-                    Play without an ac ?
+                    Play without an account ?
                 </div>
                 <LoginButton onClick={() => router.push('./quiz')} text="Play as Guest" />
             </div>
