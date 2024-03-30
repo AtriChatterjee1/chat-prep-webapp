@@ -20,20 +20,30 @@ model Question {
   correctAnswer String
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
-  time          Int      // Assuming time is stored in seconds or minutes as an integer
-  category      String   // Category of the question
-  
+  time          Int // Assuming time is stored in seconds or minutes as an integer
+  category      String // Category of the question
+
   @@map("questions")
 }
 
-model User {
-  id            String   @id @default(auto()) @map("_id") @db.ObjectId
-  email String @unique
-  name String? 
-  avatar String?
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
-  
-  @@map("users")
+model Score {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  score      String?
+  username  String?
+  quizDay   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("scores")
 }
 
+model User {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  name      String?
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
