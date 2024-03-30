@@ -8,8 +8,8 @@ import Dash from "./Dash";
 
 const QuizProgress: NextPage = () => {
     return (
-      <div className="h-14 rounded-full bg-gray w-[35vw] px-2 py-2 flex justify-around items-center mb-20 text-white text-lg font-medium">
-         <div className="flex items-center gap-[1vw]">
+      <div className="h-14 rounded-full bg-gray w-[35vw] px-2 py-2 flex justify-around items-center mb-20 text-white text-lg font-medium md:w-[25vw] md:h-[7vw]">
+         <div className="flex items-center gap-[1vw] ">
         <QuestionMark iconPath={Correct} backgroundColor="bg-correctGreen"/>1/10</div>
         <div className="flex items-center gap-[1vw]">
         <QuestionMark iconPath={Wrong} backgroundColor="bg-wrongRed"/>1/10</div>  

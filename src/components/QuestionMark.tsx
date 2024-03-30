@@ -16,7 +16,7 @@ const QuestionMark: NextPage<QuestionMarkProps> = ({ iconPath, backgroundColor }
             <Image 
                 src={iconPath}
                 alt="question mark"
-                width={size}
+                width=  {size}
                 height={size}
                 layout="fixed"
             />
