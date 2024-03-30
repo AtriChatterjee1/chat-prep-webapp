@@ -19,41 +19,41 @@ const NavBar: NextPage = () => {
                 ChatPrep
             </div>
             <div className="flex">
-                <div className="xl:text-fontgray  flex border-rose-800 border-[20px]">
+                <div className="xl:text-fontgray  flex border-rose-800 border-[5px]mx-2 ">
                     <Image 
                         src = {settings}
                         alt="Settings"
                     />
-                    <div className="text-white">
+                    {/* <div className="text-white">
                         Settings
-                    </div>
+                    </div> */}
                 </div>
-                <div className="xl:text-fontgray  border-rose-800 border-[20px]  flex">
+                <div className="xl:text-fontgray  border-rose-800 border-[5px] mx-2  flex">
                     <Image 
                         src={leaderboard}
                         alt="Leaderboard"
                     />
-                    <div className=" sm-ml-0 text-white">
+                    {/* <div className=" sm-ml-0 text-white">
                         Leaderboard
-                    </div>
+                    </div> */}
                 </div>
-                <div className="xl:text-fontgray  border-rose-800 border-[20px] md:mr-0 sm:mr-0  flex">
+                <div className="xl:text-fontgray  border-rose-800 border-[5px] mx-2  flex">
                     <Image 
                         src={myscore}
                         alt="My score"
                     />
-                    <div className=" border-rose-500 text-white border-[5px]">
+                    {/* <div className=" border-rose-500 text-white border-[5px]">
                         My Scores
-                    </div>
+                    </div> */}
                 </div>
-                <div className="xl:text-fontgray  md:mr-0 sm:mr-0  flex">
+                <div className="xl:text-fontgray mx-2 flex">
                     <Image 
                         src={logout}
                         alt="Logout"
                     />
-                    <div className="text-white">
+                    {/* <div className="text-white">
                         Logout
-                    </div>
+                    </div> */}
                 </div>
                 
             </div>
