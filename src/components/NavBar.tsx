@@ -19,7 +19,7 @@ const NavBar: NextPage = () => {
                 ChatPrep
             </div>
             <div className="flex xl:text-sm">
-                <div className="xl:text-fontgray mr-[1.6vw] flex">
+                <div className="xl:text-fontgray mr-[1.6vw]md:mr-0 sm:mr-0 md:px-0 sm:px-0 flex">
                     <Image 
                         src = {settings}
                         alt="Settings"
@@ -28,7 +28,7 @@ const NavBar: NextPage = () => {
                         Settings
                     </div>
                 </div>
-                <div className="xl:text-fontgray mr-[1.6vw] flex">
+                <div className="xl:text-fontgray mr-[1.6vw]md:mr-0 sm:mr-0  flex">
                     <Image 
                         src={leaderboard}
                         alt="Leaderboard"
@@ -37,7 +37,7 @@ const NavBar: NextPage = () => {
                         Leaderboard
                     </div>
                 </div>
-                <div className="xl:text-fontgray mr-[1.6vw] flex">
+                <div className="xl:text-fontgray mr-[1.6vw] md:mr-0 sm:mr-0  flex">
                     <Image 
                         src={myscore}
                         alt="My score"
