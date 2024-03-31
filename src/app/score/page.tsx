@@ -14,10 +14,12 @@ const Score: NextPage = () => {
             <CorrectWrong/>
 
             <div className="relative bg-gray w-[55vw] sm:w-[75vw] rounded-3xl px-[2%] pt-[8%] pb-[8%] flex flex-row justify-between items-center  text-white ">
-                <div className=" float-left w-[21vw] h-[20vw] mb =[3%] ">
+                <div className="sm:flex sm:w-0 float-left w-[100vw] h-[20vw] mb =[3%] ">
                 <Image  
+                        width="400"
                         src={Trophy} 
-                        alt="trophy"                       
+                        alt="trophy"
+
                     />
 
                 </div>
@@ -43,6 +45,15 @@ const Score: NextPage = () => {
                             </div>
                         </div>
                         <div className=" flex-col text-center font-metropolis text-goldenrod pt-[10%] ps-6 text-base sm:text-sm underline underline-offset-2 cursor-pointer">View Today’s Leaderboard</div>
+                        <div className="sm:flex sm:w-[70vw]  sm:h-[10vh] border-rose-500 border-[20px] sm:justify-center sm:items-center h-[0] w-0 mb =[3%] ">
+                <Image  
+                        width="400"
+                        src={Trophy} 
+                        alt="trophy"
+
+                    />
+
+                </div>
                         <div className="w-[25vw] sm:w-[65vw] flex-col font-left font-metropolis text-base sm:text-sm text-white leading-[1.6rem] text-wrap pt-[15%] font-light ps-6">
                             Congratulations! You have successfully completed today’s quiz. Come back to this space tomorrow for next questions.
                         </div>
